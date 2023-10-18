@@ -1,0 +1,85 @@
+// Task 1
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int F=1;
+	cout<<"Put a number:";
+	cin>> F;
+	
+	int sum=0;
+	
+	for(int F=1;F<=10;F++)
+	
+	sum+=F;
+	
+	cout<<sum;
+	
+	return 0;
+}
+
+//// Task 2
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	
+//    int num;
+//
+//    cout << "Input any number: ";
+//    
+//    cin >> num;
+//
+//    cout << "Multiplication Table for " << num << ":\n";
+//    
+//    for (int F = 1; F <= 10; ++F) {
+//        std::cout << num << " * " << F << " = " << (num * F) << std::endl;
+//    }
+//
+//    return 0;
+//}
+
+//// Task 3
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//
+//int F,factorial=1;
+//
+//	cout<<"input any  number:";
+//	
+//	cin>>F;
+//	for (int d=1;d<=F;d++) {
+//		factorial=factorial*d;
+//	}
+//	cout<<"Factorial = "<<factorial<<endl;
+//	return 0;
+//}
+
+// Task 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num = 8;
+    int n1 = 2, n2 = 3;
+    int nextTerm;
+    
+    cout<<"Input number of elements: ";
+    
+    cin >>num;
+    cout << n1 << ", " << n2 << ", ";
+    
+    for(int i = 2; i < num; i++){
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        
+        cout << nextTerm <<" , ";
+    }
+
+    return 0;
+}
